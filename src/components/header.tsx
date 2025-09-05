@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header
-      className={`z-50 w-full p-4 bg-white text-black flex fixed justify-between items-center w-full ${
+      className={`z-50 w-full p-4 bg-white text-black flex fixed absolute justify-between items-center w-full ${
         open ? "bg-opacity-10" : "bg-white"
       }`}
     >
