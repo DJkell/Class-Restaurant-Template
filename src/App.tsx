@@ -1,6 +1,9 @@
 import "./App.css";
 import Header from "./components/header";
 import BtnStroke from "./components/btn_stroke";
+import { itemImg } from "./data/itemsImg";
+import Banners from "./components/Banners";
+import type { dataItemsImg } from "./data/itemsImg";
 
 function App() {
   return (
@@ -20,6 +23,13 @@ function App() {
           archivos de texto.{" "}
         </p>
         <BtnStroke />
+        <div className="grid grid-cols-2 gap-5  m-10 justify-center items-center">
+          {itemImg.map((item: dataItemsImg) => (
+            <img src={item.img} />
+          ))}
+
+          <Banners />
+        </div>
       </div>
     </>
   );
