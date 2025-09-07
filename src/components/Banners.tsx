@@ -12,10 +12,10 @@ export default function Banners() {
           className="flex bg-cover bg-center bg-no-repeat h-40 relative overflow-visible  items-center gap-5 "
         >
           {banner.direction ? (
-            <div className="w-full flex justify-end ">
+            <div className="w-full flex justify-end">
               <img
                 src={banner.img}
-                className="absolute h-48 w-45 left-0 -top-5 ml-2 "
+                className={`absolute left-0 -top-5 ml-2 ${banner.size} `}
               />
 
               <h2 className="text-white relative right-10 ">{banner.text}</h2>
@@ -25,7 +25,7 @@ export default function Banners() {
               <h2 className="text-white relative left-10">{banner.text}</h2>
               <img
                 src={banner.img}
-                className="absolute h-54 w-44 right-0 -top-3 m-0 "
+                className={`absolute right-0 -top-3 m-0 ${banner.size} `}
               />
             </div>
           )}

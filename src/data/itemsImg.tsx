@@ -4,6 +4,7 @@ export interface dataItemsImg {
   img: string;
   bgImg?: string;
   direction?: boolean;
+  size?: string;
 }
 export const itemImg: dataItemsImg[] = [
   {
@@ -31,6 +32,7 @@ export const bannersImg: dataItemsImg[] = [
     img: "/src/assets/images/bannersImg/image1.png",
     direction: true,
     bgImg: "/src/assets/images/bannersImg/Bbg1.png",
+    size: "h-52",
   },
 
   {
@@ -39,6 +41,7 @@ export const bannersImg: dataItemsImg[] = [
     img: "/src/assets/images/bannersImg/image2.png",
     direction: false,
     bgImg: "/src/assets/images/bannersImg/Bbg2.png",
+    size: "h-44",
   },
   {
     id: 3,
@@ -46,5 +49,6 @@ export const bannersImg: dataItemsImg[] = [
     img: "/src/assets/images/bannersImg/image3.png",
     direction: true,
     bgImg: "/src/assets/images/bannersImg/Bbg1.png",
+    size: "h-44",
   },
 ];
