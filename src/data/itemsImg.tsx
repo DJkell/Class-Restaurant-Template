@@ -27,17 +27,24 @@ export const itemImg: dataItemsImg[] = [
 export const bannersImg: dataItemsImg[] = [
   {
     id: 1,
-    text: "Banner 1",
+    text: "MENU GENERAL",
     img: "/src/assets/images/bannersImg/image1.png",
     direction: true,
-    bgImg: "/src/assets/images/bannersImg/bg1.png",
+    bgImg: "/src/assets/images/bannersImg/Bbg1.png",
   },
 
   {
     id: 2,
-    text: "Banner 2",
+    text: "MENU GENERAL",
     img: "/src/assets/images/bannersImg/image2.png",
     direction: false,
-    bgImg: "/src/assets/images/bannersImg/bg2.png",
+    bgImg: "/src/assets/images/bannersImg/Bbg2.png",
+  },
+  {
+    id: 3,
+    text: "MENU GENERAL",
+    img: "/src/assets/images/bannersImg/image3.png",
+    direction: true,
+    bgImg: "/src/assets/images/bannersImg/Bbg1.png",
   },
 ];
