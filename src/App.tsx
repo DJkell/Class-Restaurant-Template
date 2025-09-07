@@ -10,7 +10,7 @@ function App() {
     <>
       <Header />
       <div
-        className="bg-white w-full h-[45vh] fixed bg-cover bg-center bg-no-repeat md:h-screen justify-center items-center flex relative"
+        className="bg-white w-full h-[45vh] fixed bg-cover bg-center bg-no-repeat mb-5 md:h-screen justify-center items-center flex relative"
         style={{ backgroundImage: "url('/src/assets/images/local_bg.png')" }}
       >
         <h1 className="text-5xl font-bold text-white">Welcome</h1>
