@@ -4,7 +4,7 @@ import BtnStroke from "./components/btn_stroke";
 import { itemImg } from "./data/itemsImg";
 import Banners from "./components/Banners";
 import type { dataItemsImg } from "./data/itemsImg";
-import Schedule from "./components/schedule";
+import Schedule from "./components/Schedule";
 
 function App() {
   return (
