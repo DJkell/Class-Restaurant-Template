@@ -31,8 +31,8 @@ export const bannersImg: dataItemsImg[] = [
     text: "MENU GENERAL",
     img: "/src/assets/images/bannersImg/image1.png",
     direction: true,
-    bgImg: "/src/assets/images/bannersImg/Bbg1.png",
-    size: "h-64",
+    bgImg: "/src/assets/images/bannersImg/Bbg1.png"
+    // size: "h-64",
   },
 
   {
@@ -40,15 +40,20 @@ export const bannersImg: dataItemsImg[] = [
     text: "MENU GENERAL",
     img: "/src/assets/images/bannersImg/image2.png",
     direction: false,
-    bgImg: "/src/assets/images/bannersImg/Bbg2.png",
-    size: "h-52",
+    bgImg: "/src/assets/images/bannersImg/Bbg2.png"
+    // size: "h-52",
   },
   {
     id: 3,
     text: "MENU GENERAL",
     img: "/src/assets/images/bannersImg/image3.png",
     direction: true,
-    bgImg: "/src/assets/images/bannersImg/Bbg1.png",
-    size: "h-52",
+    bgImg: "/src/assets/images/bannersImg/Bbg1.png"
+    // size: "h-52",
   },
 ];
+
+export const ScheduleImg = {
+  id: 1,
+  img: "/src/assets/images/bannersImg/ImgSchedule.png",
+};

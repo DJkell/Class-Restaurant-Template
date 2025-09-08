@@ -5,27 +5,31 @@ export default function Banners() {
   //esto es para las direcciones y que los banners se alternen. true es izquierda a derecha y false es derecha a izquierda
 
   return (
-    <div className="grid grid-cols-1 gap-10 mt-20 w-full">
+    <div className="grid grid-cols-1 gap-10 mt-24 mb-4">
       {bannersImg.map((banner: dataItemsImg) => (
         <div
           style={{ backgroundImage: `url(${banner.bgImg})` }}
-          className="flex bg-cover bg-center bg-no-repeat h-48 relative overflow-visible  items-center gap-5 "
+          className="flex bg-cover bg-center bg-no-repeat h-56 md:h-80 lg:h-[640px] items-center"
         >
           {banner.direction ? (
-            <div className="w-full flex justify-end">
+            <div className="flex justify-between w-11/12 md:w-3/5 gap-x-12 mx-auto items-center">
               <img
                 src={banner.img}
-                className={`absolute left-0 -top-5 ml-2 ${banner.size} `}
+                className={`w-52 md:w-96 lg:w-[416px] m-0 p-0 -translate-y-6`}
               />
 
-              <h2 className="text-white relative right-10 ">{banner.text}</h2>
+              <h2 className="text-white lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold">
+                {banner.text}
+              </h2>
             </div>
           ) : (
-            <div className="w-full flex justify-start">
-              <h2 className="text-white relative left-10">{banner.text}</h2>
+            <div className="flex justify-between w-11/12 md:w-3/5 gap-x-12 mx-auto items-center">
+              <h2 className="text-white lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold">
+                {banner.text}
+              </h2>
               <img
                 src={banner.img}
-                className={`absolute right-0 -top-3 m-0 ${banner.size} `}
+                className={`w-52 md:w-96 lg:w-[416px] m-0 p-0 -translate-y-6`}
               />
             </div>
           )}
