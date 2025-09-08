@@ -4,6 +4,8 @@ import BtnStroke from "./components/btn_stroke";
 import { itemImg } from "./data/itemsImg";
 import Banners from "./components/Banners";
 import type { dataItemsImg } from "./data/itemsImg";
+import { data } from "./data/data";
+import type { dataType } from "./data/data";
 
 function App() {
   return (
@@ -15,7 +17,6 @@ function App() {
       >
         <h1 className="text-5xl font-bold text-white">Welcome</h1>
       </div>
-
       <div className="w-full p-0 ph-10 justify-center  ">
         <h1 className="text-3xl font-bold text-white relative">Welcome</h1>
         <p className="text-white relative m-4">
