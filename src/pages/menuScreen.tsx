@@ -9,7 +9,7 @@ export default function MenuScreen() {
       <Header />
       {/*Seccion de imagen de fondo con texto menu*/}
       <div
-        className="bg-black w-full h-96  bg-center bg-no-repeat justify-center md:h-screen justify-center items-center flex flex-col"
+        className="bg-black w-full h-96  bg-center bg-no-repeat justify-center -mb-20 md:h-screen justify-center items-center flex flex-col"
         style={{
           backgroundImage: "url('/src/assets/images/bannersImg/fondomenu.png')",
         }}
