@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // iconos minimalistas
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -20,12 +21,23 @@ export default function Header() {
       {/* Menú desplegable para los celulares*/}
       {open && (
         <div className="z-40 fixed inset-0 bg-white bg-opacity-90 flex flex-col justify-center items-center  mt-0">
-          <ul className="space-y-6 text-2xl font-semibold">
-            <li className="hover:text-yellow-400 cursor-pointer">Inicio</li>
-            <li className="hover:text-yellow-400 cursor-pointer">
+          <ul className="space-y-6 text-2xl font-semibold justify-center items-center text-center space-y-8">
+            <Link to="/" className="hover:text-yellow-400 cursor-pointer">
+              Inicio
+            </Link>
+            <br />
+            <br />
+            <Link to="/Menu" className="hover:text-yellow-400 cursor-pointer">
               Menú Restaurante
-            </li>
-            <li className="hover:text-yellow-400 cursor-pointer">Contacto</li>
+            </Link>
+            <br />
+            <br />
+            <Link
+              to="/contacto"
+              className="hover:text-yellow-400 cursor-pointer"
+            >
+              Contacto
+            </Link>
           </ul>
         </div>
       )}
