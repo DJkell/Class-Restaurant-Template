@@ -8,12 +8,15 @@ export default function HomeScreen() {
   return (
     <main className="bg-black justify-center">
       <Header />
+      {/*Seccion de imagen de fondo con texto Welcome*/}
       <div
         className="bg-white w-full h-96 bg-cover bg-center bg-no-repeat mb-5 md:h-screen justify-center items-center flex"
         style={{ backgroundImage: "url('/src/assets/images/local_bg.png')" }}
       >
         <h1 className="text-5xl md:text-7xl font-bold text-white">Welcome</h1>
       </div>
+
+      {/*Seccion de bienvenida con boton ver mas y cuadricula de imagenes*/}
       <div className="w-full p-0 ph-10 justify-center text-center ">
         <h1 className="text-3xl font-bold text-white relative ">Welcome</h1>
         <p className="text-white relative m-4">
