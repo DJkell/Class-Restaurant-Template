@@ -5,11 +5,11 @@ import Banners from "../components/Banners";
 
 export default function MenuScreen() {
   return (
-    <main className="bg-black justify-center m-0 ">
+    <main className="bg-black justify-center">
       <Header />
       {/*Seccion de imagen de fondo con texto menu*/}
       <div
-        className="bg-black w-full h-96  bg-center bg-no-repeat justify-center -mb-20 md:h-screen justify-center items-center flex flex-col"
+        className="bg-black bg-cover w-full h-80  bg-center bg-no-repeat -mb-10 md:h-screen justify-center items-center flex flex-col pt-10"
         style={{
           backgroundImage: "url('/src/assets/images/bannersImg/fondomenu.png')",
         }}
@@ -28,7 +28,7 @@ export default function MenuScreen() {
           </BtnStroke>
         </div>
       </div>
-      <Banners />
+      <Banners btn={true} />
     </main>
   );
 }

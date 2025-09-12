@@ -37,7 +37,7 @@ export const bannersImg: dataItemsImg[] = [
 
   {
     id: 2,
-    text: "MENU GENERAL",
+    text: "MENU ",
     img: "/src/assets/images/bannersImg/image2.png",
     direction: false,
     bgImg: "/src/assets/images/bannersImg/Bbg2.png",
@@ -50,6 +50,14 @@ export const bannersImg: dataItemsImg[] = [
     direction: true,
     bgImg: "/src/assets/images/bannersImg/Bbg1.png",
     // size: "h-52",
+  },
+  {
+    id: 4,
+    text: "BEBIDAS VARIADAS",
+    img: "/src/assets/images/bannersImg/bebidas.png",
+    direction: false,
+    bgImg: "/src/assets/images/bannersImg/Bbg2.png",
+    size: "h-52",
   },
 ];
 
