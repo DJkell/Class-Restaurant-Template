@@ -51,6 +51,34 @@ export const bannersImg: dataItemsImg[] = [
     bgImg: "/src/assets/images/bannersImg/Bbg1.png",
     // size: "h-52",
   },
+];
+
+export const bannersImgMenu: dataItemsImg[] = [
+  {
+    id: 1,
+    text: "MENU GENERAL",
+    img: "/src/assets/images/bannersImg/image1.png",
+    direction: true,
+    bgImg: "/src/assets/images/bannersImg/Bbg1.png",
+    // size: "h-64",
+  },
+
+  {
+    id: 2,
+    text: "MENU ",
+    img: "/src/assets/images/bannersImg/image2.png",
+    direction: false,
+    bgImg: "/src/assets/images/bannersImg/Bbg2.png",
+    // size: "h-52",
+  },
+  {
+    id: 3,
+    text: "MENU GENERAL",
+    img: "/src/assets/images/bannersImg/image3.png",
+    direction: true,
+    bgImg: "/src/assets/images/bannersImg/Bbg1.png",
+    // size: "h-52",
+  },
   {
     id: 4,
     text: "BEBIDAS VARIADAS",

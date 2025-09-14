@@ -5,13 +5,13 @@ export const data = {
   Horario: "Todos los días: 11 am a 11 pm.",
   imstagram: "https://www.instagram.com/100montaditosrd/",
   tiktok: "https://www.tiktok.com/@100montaditosrd",
-  ubicacion1: [
+  ubicacion: [
     {
-      ubicacion1: "Sucursal Galería 360",
+      ubicacion: "Sucursal Galería 360",
       link: "https://goo.gl/maps/xyz123",
     },
     {
-      ubicacion2: "Sucursal Downtown Center",
+      ubicacion: "Sucursal Downtown Center",
       link: "https://goo.gl/maps/xyz123",
     },
   ],

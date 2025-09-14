@@ -2,6 +2,7 @@ import "../App.css";
 import Header from "../components/header";
 import BtnStroke from "../components/btn_stroke";
 import Banners from "../components/Banners";
+import { bannersImgMenu } from "../data/itemsImg";
 
 export default function MenuScreen() {
   return (
@@ -28,7 +29,7 @@ export default function MenuScreen() {
           </BtnStroke>
         </div>
       </div>
-      <Banners btn={true} />
+      <Banners btn={true} data={bannersImgMenu} />
     </main>
   );
 }

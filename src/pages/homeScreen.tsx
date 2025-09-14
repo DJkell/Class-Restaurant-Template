@@ -3,6 +3,8 @@ import BtnStroke from "../components/btn_stroke";
 import Banners from "../components/Banners";
 import Schedule from "../components/Schedule";
 import Cuadricula from "../components/cuadricula";
+import { bannersImg } from "../data/itemsImg";
+import Footer from "../components/footer";
 
 export default function HomeScreen() {
   return (
@@ -27,7 +29,7 @@ export default function HomeScreen() {
 
         <Cuadricula />
 
-        <Banners />
+        <Banners data={bannersImg} />
       </div>
       <Schedule />
 
@@ -66,6 +68,7 @@ export default function HomeScreen() {
         <BtnStroke color={"black"}>Detalles</BtnStroke>
         <Cuadricula />
       </div>
+      <Footer></Footer>
     </main>
   );
 }
