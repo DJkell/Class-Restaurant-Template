@@ -3,6 +3,7 @@ import Header from "../components/header";
 import BtnStroke from "../components/btn_stroke";
 import Banners from "../components/Banners";
 import { bannersImgMenu } from "../data/itemsImg";
+import Footer from "../components/footer";
 
 export default function MenuScreen() {
   return (
@@ -30,6 +31,7 @@ export default function MenuScreen() {
         </div>
       </div>
       <Banners btn={true} data={bannersImgMenu} />
+      <Footer />
     </main>
   );
 }
