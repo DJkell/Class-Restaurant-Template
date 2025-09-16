@@ -1,21 +1,22 @@
 import React from "react";
 import { data } from "../data/data";
+import { Instagram } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-white text-black py-8">
       {/* Primera fila */}
       <div className="max-w-6xl mx-auto px-4 w-full flex flex-col md:flex-row md:justify-between gap-8">
         <div className="flex-1">
           <h3 className="font-bold mb-2">{data.name}</h3>
-          <p className="text-sm">
+          <p className="text-ms">
             El mejor en sabor precio y diversion a la vuelta de la esquina.
           </p>
         </div>
         <div className="flex-1">
           <h3 className="font-bold mb-2">Contacto</h3>
 
-          <ul className="text-sm">
+          <ul className="text-ms">
             <li>Tel: {data.phone}</li>
             <li>Email: {data.email}</li>
             <li className="mt-2 font-bold ">Dirección:</li>
@@ -28,24 +29,14 @@ const Footer: React.FC = () => {
         </div>
         <div className="flex-1">
           <h3 className="font-bold mb-2">Síguenos</h3>
-          <ul className="flex gap-4">
-            <li>
-              <a href="#" aria-label="Facebook" className="hover:text-gray-400">
-                Facebook
-              </a>
-            </li>
+          <ul className="flex gap-4 justify-center">
             <li>
               <a
                 href="#"
                 aria-label="Instagram"
                 className="hover:text-gray-400"
               >
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Twitter" className="hover:text-gray-400">
-                Twitter
+                <Instagram size={30} />
               </a>
             </li>
           </ul>
