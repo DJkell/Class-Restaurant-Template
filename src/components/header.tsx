@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // iconos minimalistas
 import { Link } from "react-router-dom";
+import useWindowWidth from "../utils/windowWidth";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const windWith = useWindowWidth();
 
   return (
     <header
@@ -12,6 +14,21 @@ export default function Header() {
       }`}
     >
       <h1 className="text-lg font-bold z-50">logo</h1>
+      {windWith > 768 && (
+        <>
+          <nav className="flex space-x-8 text-lg font-semibold">
+            <Link to="/" className="hover:text-yellow-400">
+              Inicio
+            </Link>
+            <Link to="/Menu" className="hover:text-yellow-400">
+              Menú
+            </Link>
+            <Link to="/contacto" className="hover:text-yellow-400">
+              Contacto
+            </Link>
+          </nav>
+        </>
+      )}
 
       {/* Botón de Menú hamburguesa con el botonsito de Menú y X */}
       <button onClick={() => setOpen(!open)} className="md:hidden z-50">

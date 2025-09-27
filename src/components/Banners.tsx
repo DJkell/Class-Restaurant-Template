@@ -14,19 +14,19 @@ export default function Banners({ btn, data }: BannersProps) {
       {data.map((banner: dataItemsImg) => (
         <div
           style={{ backgroundImage: `url(${banner.bgImg})` }}
-          className="flex bg-cover bg-center bg-no-repeat h-48 md:h-80 lg:h-[640px] items-center"
+          className="flex bg-cover bg-center bg-no-repeat h-48 md:h-80 lg:h-[640px] "
         >
           {banner.direction ? (
             <div
-              className={`flex justify-between w-11/12 md:w-3/5 gap-x-12 mx-auto items-center ${
+              className={`flex justify-between w-11/12 md:w-3/5 gap-x-2 mx-12 items-center md:gap-x-22  md:mx-20 ${
                 btn && "ml-6 mr-14"
               }`}
             >
               <img
                 src={banner.img}
-                className={`w-2/5 md:w-96 lg:w-[416px] m-0 p-0 -translate-y-6`}
+                className={`w-2/5 md:w-80 lg:w-[416px] -translate-y-6 md:mr-20`}
               />
-              <div className="flex flex-col gap-y-2">
+              <div className="flex flex-col">
                 <h2 className="text-white lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold">
                   {banner.text}
                 </h2>
@@ -39,7 +39,7 @@ export default function Banners({ btn, data }: BannersProps) {
             </div>
           ) : (
             <div
-              className={`flex justify-between w-11/12 md:w-3/5 gap-x-12 mx-auto items-center ${
+              className={`flex justify-between w-11/12 md:w-3/5 gap-x-12 mx-12 md:ml-40 md:mr-12 items-center ${
                 btn && "ml-14 mr-6"
               }`}
             >
@@ -53,9 +53,10 @@ export default function Banners({ btn, data }: BannersProps) {
                   </BtnStroke>
                 )}
               </div>
+
               <img
                 src={banner.img}
-                className={`w-1/2 md:w-96 lg:w-[416px] m-0 p-0 -translate-y-6`}
+                className={`w-2/5 md:w-80 lg:w-[416px] -translate-y-6 md:translate-x-1/4`}
               />
             </div>
           )}
