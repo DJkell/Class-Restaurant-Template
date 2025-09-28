@@ -4,11 +4,11 @@ import { Instagram } from "lucide-react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white text-black py-8">
+    <footer className="bg-white text-black py-8 text-lg md:text-xl lg:text-3xl">
       {/* Primera fila */}
-      <div className="max-w-6xl mx-auto px-4 w-full flex flex-col md:flex-row md:justify-between gap-8">
+      <div className="max-w-6xl mx-auto px-4 w-full flex flex-col md:flex-row md:justify-between gap-10">
         <div className="flex-1">
-          <h3 className="font-bold mb-2">{data.name}</h3>
+          <h3 className="font-bold mb-2 ">{data.name}</h3>
           <p className="text-ms">
             El mejor en sabor precio y diversion a la vuelta de la esquina.
           </p>
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         <div className="flex-1">
           <h3 className="font-bold mb-2">Contacto</h3>
 
-          <ul className="text-ms">
+          <ul className="text-ms mb-8">
             <li>Tel: {data.phone}</li>
             <li>Email: {data.email}</li>
             <li className="mt-2 font-bold ">Dirección:</li>
