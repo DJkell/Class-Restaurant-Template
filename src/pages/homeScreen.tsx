@@ -3,10 +3,15 @@ import BtnStroke from "../components/btn_stroke";
 import Banners from "../components/Banners";
 import Schedule from "../components/Schedule";
 import Cuadricula from "../components/cuadricula";
+
 import { bannersImg } from "../data/itemsImg";
 import Footer from "../components/footer";
+import BannerSection from "../components/BannersTow";
+import useWindowWidth from "../utils/windowWidth";
 
 export default function HomeScreen() {
+  const winWidth = useWindowWidth();
+
   return (
     <main className="bg-black justify-center">
       <Header />
@@ -69,16 +74,19 @@ export default function HomeScreen() {
         </h2>
         <BtnStroke color={"black"}>Detalles</BtnStroke>
         <Cuadricula />
-        <div className="flex flex-col gap-20 mt-28 mb-10 lg:mt-60">
-      {data.map((banner, index) => (
-        <BannerSection
-          key={index}
-          banner={banner}
-          btn={btn}
-          winWidth={winWidth}
-          reverse={!banner.direction}
-        />
       </div>
+      <div className="flex flex-col gap-20 mt-28 mb-10 lg:mt-60">
+        {bannersImg.map((banner, index) => (
+          <BannerSection
+            key={index}
+            banner={banner}
+            btn={false}
+            winWidth={winWidth}
+            reverse={!banner.direction}
+          />
+        ))}{" "}
+      </div>
+
       <Footer></Footer>
     </main>
   );
