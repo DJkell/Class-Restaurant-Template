@@ -3,14 +3,13 @@ import BtnStroke from "../components/btn_stroke";
 import Banners from "../components/Banners";
 import Schedule from "../components/Schedule";
 import Cuadricula from "../components/cuadricula";
+import useWindowWidth from "../utils/windowWidth";
 
 import { bannersImg } from "../data/itemsImg";
 import Footer from "../components/footer";
-import BannerSection from "../components/BannersTow";
-import useWindowWidth from "../utils/windowWidth";
 
 export default function HomeScreen() {
-  const winWidth = useWindowWidth();
+  const windWith = useWindowWidth();
 
   return (
     <main className="bg-black justify-center">
@@ -20,19 +19,25 @@ export default function HomeScreen() {
         className="bg-white w-full h-96 bg-cover bg-center bg-no-repeat mb-5 md:h-screen justify-center items-center flex"
         style={{ backgroundImage: "url('/src/assets/images/local_bg.png')" }}
       >
-        <h1 className="text-5xl md:text-7xl font-bold text-white">Welcome</h1>
+        <h1 className="text-5xl md:text-6xl xl:text-5xl font-bold text-white">
+          Welcome
+        </h1>
       </div>
 
       {/*Seccion de bienvenida con boton ver mas y cuadricula de imagenes*/}
-      <div className="w-full p-0 ph-10 justify-center text-center ">
-        <h1 className="lg:text-7xl text-3xl font-bold text-white relative lg:my-12 ">
-          Welcome
-        </h1>
-        <p className="text-white relative m-4 lg:text-4xl lg:mx-40 lg:my-12 md:text-2xl ">
-          Lorem Ipsum es simplemente el texto de relleno de las imprentas y
-          archivos de texto.{" "}
-        </p>
-        <BtnStroke>Ver Mas</BtnStroke>
+      <div className=" w-full p-0 ph-10 justify-center text-center  ">
+        <div className="bg-black md:w-4/5 mx-auto md:-translate-y-40 md:pt-10 ">
+          <h1 className="lg:text-7xl text-3xl font-bold text-white relative lg:my-12">
+            Hello you! welcome
+          </h1>
+          <p className="text-white relative m-4 lg:text-1xl lg:mx-40 lg:my-12 md:text-2xl ">
+            Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+            archivos de texto. Lorem Ipsum es simplemente el texto de relleno de
+            las imprentas y archivos de texto.Lorem Ipsum es simplemente el
+            texto de relleno de las imprentas y archivos de texto.{" "}
+          </p>
+          {windWith < 800 && <BtnStroke>Ver Mas</BtnStroke>}
+        </div>
 
         <Cuadricula />
 
@@ -75,18 +80,6 @@ export default function HomeScreen() {
         <BtnStroke color={"black"}>Detalles</BtnStroke>
         <Cuadricula />
       </div>
-      <div className="flex flex-col gap-20 mt-28 mb-10 lg:mt-60">
-        {bannersImg.map((banner, index) => (
-          <BannerSection
-            key={index}
-            banner={banner}
-            btn={false}
-            winWidth={winWidth}
-            reverse={!banner.direction}
-          />
-        ))}{" "}
-      </div>
-
       <Footer></Footer>
     </main>
   );

@@ -6,6 +6,26 @@ export interface BannersProps {
   btn?: boolean;
   data: dataItemsImg[];
 }
+export default function Banners({ btn, data }: BannersProps) {
+  const winWidth = useWindowWidth();
+
+  return (
+    <div className="flex flex-col gap-9 md:gap-8 lg:gap-16 mt-16 mb-10 md:mt-2">
+      {data.map((banner, index) => (
+        <BannerSection
+          key={index}
+          banner={banner}
+          btn={btn}
+          winWidth={winWidth}
+          reverse={!banner.direction}
+        />
+      ))}
+    </div>
+  );
+}
+
+/*En este caso decidi quitar elbanner anterior para cambiarlo por un sistema mas ordenado reutilizando componentes de forma mas escalable */
+
 /* import type { dataItemsImg } from "../data/itemsImg";
 import BtnStroke from "./btn_stroke";
 import useWindowWidth from "../utils/windowWidth";
@@ -81,21 +101,3 @@ export default function Banners({ btn, data }: BannersProps) {
   );
 }
  */
-
-export default function Banners({ btn, data }: BannersProps) {
-  const winWidth = useWindowWidth();
-
-  return (
-    <div className="flex flex-col gap-20 mt-28 mb-10 lg:mt-60">
-      {data.map((banner, index) => (
-        <BannerSection
-          key={index}
-          banner={banner}
-          btn={btn}
-          winWidth={winWidth}
-          reverse={!banner.direction}
-        />
-      ))}
-    </div>
-  );
-}

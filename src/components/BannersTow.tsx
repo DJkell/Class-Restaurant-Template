@@ -1,6 +1,5 @@
 import type { dataItemsImg } from "../data/itemsImg";
 import BtnStroke from "./btn_stroke";
-import useWindowWidth from "../utils/windowWidth";
 
 interface BannerSectionProps {
   banner: dataItemsImg;
@@ -18,11 +17,11 @@ export default function BannerSection({
   return (
     <div
       style={{ backgroundImage: `url(${banner.bgImg})` }}
-      className="bg-cover bg-center bg-no-repeat py-12 px-6 md:px-20"
+      className="bg-cover bg-center bg-no-repeat py-12 px-6 md:px-20 lg:px-6 lg:max-h-[750px] md:max-h-[500px] "
     >
       <div
-        className={`grid grid-cols-1 md:grid-cols-2 items-center gap-8 max-w-7xl mx-auto ${
-          reverse ? "md:flex-row-reverse" : ""
+        className={`grid grid-cols-1 md:grid-cols-2 items-center gap-9  md:gap-32  max-w-7xl mx-auto ${
+          reverse ? " md:flex md:flex-row-reverse md:gap-10 lg:gap-48" : ""
         }`}
       >
         {/* Imagen */}
@@ -30,17 +29,24 @@ export default function BannerSection({
           <img
             src={banner.img}
             alt={banner.text}
-            className="w-full max-w-[400px] object-cover rounded-xl shadow-lg"
+            className="w-full max-w-[300px] object-cover rounded-xl shadow-lg
+            md:max-w-[2000px] lg:-translate-y-24 md:-translate-y-10"
           />
         </div>
 
         {/* Texto */}
-        <div className="text-white text-center md:text-left flex flex-col items-center md:items-start">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
+        <div
+          className={`text-white text-center md:text-left flex flex-col items-center md:items-center ${
+            reverse
+              ? "lg:translate-x-20 xl:-translate-x-10 md:justify-end  justify-start"
+              : ""
+          } `}
+        >
+          <h2 className="text-2xl md:text-2xl lg:text-5xl font-bold">
             {banner.text}
           </h2>
-          {winWidth >= 1500 && (
-            <p className="mt-4 text-base md:text-lg lg:text-xl max-w-md">
+          {winWidth >= 800 && (
+            <p className="mt-10 items-center text-center text-light  lg:text-3xl text-1xl max-w-md">
               {banner.data}
             </p>
           )}

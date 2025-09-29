@@ -16,7 +16,7 @@ export default function Header() {
       <h1 className="text-lg font-bold z-50 ">logo</h1>
       {windWith > 768 && (
         <>
-          <nav className="flex space-x-8 text-lg font-semibold md:text-lg lg:text-4xl ">
+          <nav className="flex space-x-8 text-lg font-semibold md:text-lg lg:text-2xl ">
             <Link to="/" className="hover:text-yellow-400">
               Inicio
             </Link>
