@@ -63,10 +63,7 @@ export default tseslint.config([
         tsconfigRootDir: import.meta.dirname,
       },
 
-<img width="646" height="723" alt="image" src="https://github.com/user-attachments/assets/308aae86-64ae-416b-8102-9f387ea7cbb5" />
-<img width="321" height="543" alt="image" src="https://github.com/user-attachments/assets/0a203b72-488b-4477-9fd2-b929180d5091" />
-<img width="123" height="371" alt="image" src="https://github.com/user-attachments/assets/c7f5dc22-31ce-4314-ad69-23ea8e506931" />
-<img width="121" height="591" alt="image" src="https://github.com/user-attachments/assets/7e19e6d2-e31a-48d9-bab9-11926155a95b" />
+
 
 
 
@@ -76,3 +73,7 @@ export default tseslint.config([
   },
 ])
 ```
+<img width="646" height="723" alt="image" src="https://github.com/user-attachments/assets/308aae86-64ae-416b-8102-9f387ea7cbb5" />
+<img width="321" height="543" alt="image" src="https://github.com/user-attachments/assets/0a203b72-488b-4477-9fd2-b929180d5091" />
+<img width="123" height="371" alt="image" src="https://github.com/user-attachments/assets/c7f5dc22-31ce-4314-ad69-23ea8e506931" />
+<img width="121" height="591" alt="image" src="https://github.com/user-attachments/assets/7e19e6d2-e31a-48d9-bab9-11926155a95b" />
