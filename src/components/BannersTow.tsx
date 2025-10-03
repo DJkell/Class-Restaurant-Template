@@ -29,7 +29,7 @@ export default function BannerSection({
           <img
             src={banner.img}
             alt={banner.text}
-            className="w-full max-w-[300px] object-cover rounded-xl shadow-lg
+            className="z-100 w-full max-w-[300px] object-cover rounded-xl shadow-lg
             md:max-w-[2000px] lg:-translate-y-24 md:-translate-y-10"
           />
         </div>

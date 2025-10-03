@@ -2,7 +2,10 @@ export const data = {
   name: "100 Montaditos",
   phone: "123-456-789",
   email: "l.castro@100montaditosrd.com",
-  Horario: "Todos los días: 11 am a 11 pm.",
+  Horario: [
+    "Lunes a Viernes: 11 am a 11 pm.",
+    "Sábados y Domingos: 12 pm a 11 pm.",
+  ],
   imstagram: "https://www.instagram.com/100montaditosrd/",
   tiktok: "https://www.tiktok.com/@100montaditosrd",
   ubicacion: [

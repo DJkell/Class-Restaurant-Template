@@ -95,7 +95,7 @@ export const bannersImgMenu: dataItemsImg[] = [
 
 export const ScheduleImg = {
   id: 1,
-  img: "/src/assets/images/bannersImg/ImgSchedule.png",
+  img: "/src/assets/images/bannersImg/platored.png",
 };
 
 export const DeliveryImg = [
