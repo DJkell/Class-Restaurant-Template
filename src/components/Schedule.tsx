@@ -17,9 +17,9 @@ export default function Schedule() {
   //logica para el responsive
   if (winWidth > 900) {
     return (
-      <div className="grid grid-cols-3 grid-flow-row-dense min-h-[250px] bg-white justify-center py-20">
+      <div className="grid grid-cols-3 grid-flow-row-dense min-h-[250px] max-h-[1300px] bg-white justify-center py-20">
         <img
-          className="min-w-[800px] max-w-[2000px] object-cover rounded-xl col-span-1 h-full w-full -translate-x-52 "
+          className="min-w-[800px] max-w-[1100px] object-cover rounded-xl col-span-1 h-full w-full -translate-x-52 "
           src={ScheduleImg.img}
           alt=""
         />
