@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white text-black md:py-20 text-xl md:text-xl lg:text-3xl text-base/8">
+    <footer className="bg-white text-black md:py-20 text-xl md:text-xl lg:text-2xl text-base/8">
       {/* Primera fila */}
       <div className="max-w-6xl mx-auto px-4 w-full flex flex-col md:flex-row md:justify-between md:gap-20">
         <div className="flex-1">
